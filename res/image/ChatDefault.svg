@@ -1,0 +1,16 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>Layer 1</title>
+  <ellipse stroke="#000" ry="172.50001" rx="228" id="svg_3" cy="210.99999" cx="260.50001" fill="#33666C"/>
+  <ellipse stroke="#000" ry="156.00001" rx="206.50001" id="svg_5" cy="209.5" cx="258.00002" fill="#6D97AB"/>
+  <ellipse ry="133.5" rx="185" id="svg_6" cy="347" cx="485.5" stroke="#000" fill="#33666C"/>
+  <ellipse stroke="#000" ry="120.5" rx="166" id="svg_7" cy="347" cx="485.5" fill="#7DD8B5"/>
+  <path stroke="#000" id="svg_8" d="m97.78467,334.5c-69.0073,83.61468 -83.28467,93 -83.28467,93c0,0 163.00001,-63.99082 163.00001,-64.84403" opacity="NaN" fill="#33666C"/>
+  <path transform="rotate(-86.87 659.39 451.446)" stroke="#000" id="svg_9" d="m660.0703,399.34018c-26.2984,93.69526 -31.73945,104.21208 -31.73945,104.21208c0,0 62.11863,-71.70556 62.11863,-72.66163" opacity="NaN" fill="#33666C"/>
+  <ellipse stroke="#000" ry="21.5" rx="21.5" id="svg_11" cy="145" cx="191" fill="#ffffff"/>
+  <ellipse ry="15" rx="15" id="svg_13" cy="304.5" cx="421.5" stroke="#000" fill="#ffffff"/>
+  <ellipse stroke="#000" ry="21.5" rx="21.5" id="svg_14" cy="143" cx="313" fill="#ffffff"/>
+  <ellipse ry="15" rx="15" id="svg_15" cy="302.5" cx="535.5" stroke="#000" fill="#ffffff"/>
+ </g>
+</svg>

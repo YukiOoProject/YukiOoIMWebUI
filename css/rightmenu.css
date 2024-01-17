@@ -1,0 +1,28 @@
+#mainPartRightMenu {
+    display: none;
+    position: absolute;
+    width: 200px;
+    height: fit-content;
+    z-index: 99999;
+    background: rgba(255,255,255,0.6);
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* 苹果你他妈傻逼吗 */
+}
+
+#mainPartRightMenu > ul {
+    border-radius: 5px;
+    overflow: hidden;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#mainPartRightMenu > ul > li {
+    padding: 10px;
+    cursor: default;
+}
+
+#mainPartRightMenu > ul > li:hover {
+    background: rgba(205, 205, 205, 0.6);
+}
