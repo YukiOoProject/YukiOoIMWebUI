@@ -7,9 +7,11 @@ userList.forEach(function(div) {
         mainPart.innerHTML = ''
 
         var chatWindow = document.createElement('div')
-        chatWindow.className = '.default-main-part-window'
+        chatWindow.className = '.chat-window'
         chatWindow.id = 'chat-window'
-        chatWindow.innerHTML += div.getAttribute('data-username')
+        chatWindow.style.width = '100%'
+        chatWindow.style.height = '100%'
+        chatWindow.innerHTML += "<div class='name-bar'>" + div.getAttribute('data-username') + "</div>"
         mainPart.append(chatWindow)
     })
 })

@@ -6,7 +6,7 @@
 html {
     /* width: 100%;
     height: 100%; */
-    background: url(/res/image/background.jpg) no-repeat;
+    /* background: url(/res/image/background.jpg) no-repeat; */
 }
 
 .left-part {
@@ -28,13 +28,14 @@ html {
 }
 
 .main-part {
+    position: fixed;
     display: block;
     height: 95%;
     border: 1px solid rgba(160, 160, 160, 0.6);
     border-radius: 5px;
-    background: rgba(239, 239, 239, 0.87);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    /* background: rgba(239, 239, 239, 0.87); */
+    background: url(./res/image/background.jpg) no-repeat;
+    background-size: cover;
     z-index: 1;
 }
 
@@ -45,7 +46,6 @@ html {
     }
 
     .main-part {
-        position: fixed;
         right: 2.5%;
         top: 2.5%;
         width: calc(100% - 350px);
@@ -60,7 +60,6 @@ html {
     }
 
     .main-part {
-        position: fixed;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -75,7 +74,25 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background: rgba(239, 239, 239, 0.87);
+    backdrop-filter: blur(10px);
     align-items: center;
+}
+
+.name-bar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    box-sizing: border-box;
+    padding: 20px 20px;
+    margin-top: 0px;
+    background: rgba(255, 255, 255, 0.802);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /*傻逼🍎想想就气*/
+    width: 100%;
+    height: 45px;
 }
 
 .chat-window {
@@ -103,11 +120,12 @@ html {
     justify-content: start;
     align-items: center;
     width: 100%;
-    height: 50px;
+    height: 60px;
     box-sizing: border-box;
     padding-left: 20px;
     padding-right: 10px;
     margin-top: 10px;
+    cursor: default;
 }
 
 .list-user:hover {
@@ -118,4 +136,49 @@ html {
     display: flex;
     flex: 1;
     margin-left: 10px;
+}
+
+.search-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.search-box > input[type=text] {
+    width: 80%;
+    height: 35px;
+    outline-style: none;
+    font-size: 20px;
+    border: 1px solid rgba(141, 202, 255, 0.6);
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 999px;
+    transition: border-redius 0.1s;
+}
+
+.search-box > input[type=text]:focus {
+    border: 2px solid rgba(111, 188, 255, 0.849);
+    border-radius: 5px;
+}
+
+#settings {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 60%;
+    z-index: 999999;
+    background: rgba(255, 255, 255, 0.802);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 20px 20px 20px 20px;
 }

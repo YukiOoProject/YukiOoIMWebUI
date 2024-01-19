@@ -3,40 +3,62 @@
         <title>YukiOoIM Web Dev Client</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-        <link rel="stylesheet" href="/css/default.css">
-        <link rel="stylesheet" href="/css/rightmenu.css">
+        <link rel="stylesheet" href="./css/default.css">
+        <link rel="stylesheet" href="./css/rightmenu.css">
     </head>
     <body>
         <div class="left-part" id="left-part">
             <ul id="userList">
                 <!-- TODO: Search box -->
                 <li>
+                    <div class="search-box">
+                        <input type="text" id="search">
+                        <button onclick="openSettingWindow()">@</button>
+                    </div>
+                </li>
+                <li>
                     <div class="list-user" id="user" data-username="蹦蹦小圆帽">
-                        <img src="/res/image/testavatar.jpg" class="avatar">
+                        <img src="./res/image/testavatar.jpg" class="avatar">
                         <span>蹦蹦小圆帽</span>
                     </div>
                 </li>
                 <li>
                     <div class="list-user" id="user" data-username="轰轰雷大炮">
-                        <img src="/res/image/testavatar.jpg" class="avatar">
+                        <img src="./res/image/testavatar.jpg" class="avatar">
                         <span>轰轰雷大炮</span>
                     </div>
                 </li>
+                <ul>
+                    <button onclick='setBGBlur()'>setBGBlur</button>
+                    <button onclick="setBGWhite()">setBGWhite</button>
+                    
+                </ul>
             </ul>
         </div>
         <div class="main-part">
             <div class="default-main-part-window" id="default-chat-page">
-                <img src="/res/image/ChatDefault.svg" width="300px">
+                <img src="./res/image/ChatDefault.svg" width="300px">
             </div>
         </div>
+        <!-- Hidden Items -->
+
+        <!-- Main Part Right Menu -->
         <div id="mainPartRightMenu">
             <ul>
                 <li>Option0</li>
                 <li>Option1</li>
             </ul>
         </div>
-        <script src="/js/default.js"></script>
-        <script src="/js/switch_user.js"></script>
-        <script src="/js/right_menu.js"></script>
+
+        <!-- Settings -->
+        <div id="settings">
+            <h1>Settings</h1>
+        </div>
+
+        <script src="./js/default.js"></script>
+        <script src="./js/switch_user.js"></script>
+        <script src="./js/right_menu.js"></script>
+        <script src="./js/settings.js"></script>
+        <script src="./js/test.js"></script>
     </body>
 </html>
