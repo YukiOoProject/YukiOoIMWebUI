@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>YukiOoIM Web Dev Client</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maxium-scale=1.0, user-scalable=no">
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <link rel="stylesheet" href="./css/default.css">
         <link rel="stylesheet" href="./css/rightmenu.css">
@@ -43,9 +43,17 @@
         <!-- Hidden Items -->
 
         <!-- Main Part Right Menu -->
-        <div id="mainPartRightMenu">
+        <div id="mainPartRightMenu" class="right-menu">
             <ul>
-                <li>Option0</li>
+                <li id="changeBG">Change Background</li>
+                <li>Option1</li>
+            </ul>
+        </div>
+
+        <!-- Left Part Right Menu -->
+        <div id="leftPartRightMenu" class="right-menu">
+            <ul>
+                <li id="pinToTop">Pin</li>
                 <li>Option1</li>
             </ul>
         </div>

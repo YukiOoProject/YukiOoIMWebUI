@@ -41,14 +41,18 @@ html {
 
 @media (min-width: 800px) {
     .left-part {
+        margin-top: 0;
         width: 300px;
-        left: 5px;
+        border: none;
+        border-radius: 0;
+        height: 100%;
     }
 
     .main-part {
-        right: 2.5%;
-        top: 2.5%;
-        width: calc(100% - 350px);
+        margin-left: 300px;
+        border: none;
+        width: calc(100% - 300px);
+        height: 100%;
     }
 }
 
@@ -165,6 +169,20 @@ html {
 .search-box > input[type=text]:focus {
     border: 2px solid rgba(111, 188, 255, 0.849);
     border-radius: 5px;
+}
+
+.search-box > button {
+    margin-left: 20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 0.1px solid rgba(209, 209, 209, 0.87);
+    background: none;
+}
+
+.search-box > button:hover {
+    border: 2px solid rgba(209, 209, 209, 0.87);
+    background: rgba(239, 239, 239, 0.87);
 }
 
 #settings {

@@ -6,8 +6,6 @@ document.addEventListener('mousemove', (e) => {
     const mouseX = e.clientX
     const screenWidth = window.innerWidth
 
-    console.log(screenWidth)
-
     if (screenWidth < 800) {
         if (mouseX <= 10) {
             leftpart.style.left = '5px'

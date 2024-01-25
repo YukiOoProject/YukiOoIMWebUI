@@ -1,4 +1,4 @@
-#mainPartRightMenu {
+.right-menu {
     display: none;
     position: absolute;
     width: 200px;
@@ -10,7 +10,7 @@
     -webkit-backdrop-filter: blur(10px); /* 苹果你他妈傻逼吗 */
 }
 
-#mainPartRightMenu > ul {
+.right-menu > ul {
     border-radius: 5px;
     overflow: hidden;
     list-style-type: none;
@@ -18,11 +18,11 @@
     margin: 0;
 }
 
-#mainPartRightMenu > ul > li {
+.right-menu > ul > li {
     padding: 10px;
     cursor: default;
 }
 
-#mainPartRightMenu > ul > li:hover {
+.right-menu > ul > li:hover {
     background: rgba(205, 205, 205, 0.6);
 }
